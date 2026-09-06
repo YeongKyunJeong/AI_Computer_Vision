@@ -113,7 +113,7 @@ def build_model(strategy):
     trainable_param = sum( p.numel() for p in model.parameters() if p.requires_grad == True)
     total_param = sum(p.numel for p in model.parameters())
 
-    print(f"학습 파라미터 : {trainable_param:,} / {total_param:,} ") # 100,000
+    print(f"Trainable parameters : {trainable_param:,} / {total_param:,} ") # 100,000
 
     return model
 
